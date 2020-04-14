@@ -1,0 +1,91 @@
+<head>
+
+	<title>EnderSquidJS</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<div class="jumbotron">
+	  <h1 class="display-4"><img src="img/endersquid.png" height="100px" weight="auto">EnderSquidJS</h1>
+	  <p class="lead">Query a Minecraft Server with JavaScript</p>
+	  <hr class="my-4">
+	  <p><a href="#">endersquid.js</a> is a JavaScript Library that make the usage of <a href="https://github.com/Cryptkeeper/mc-ping-updated" target="_blank">mc-ping-updated</a> easier and accessible to everyone.</p>
+	  <a class="github-button" href="https://github.com/EnderSquidJS/endersquid" data-icon="octicon-star" data-size="large" aria-label="Star EnderSquidJS/endersquid on GitHub">Star endersquid</a>
+	  <a class="github-button" href="https://github.com/EnderSquidJS/endersquid/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download EnderSquidJS/endersquid on GitHub">Download endersquid</a>
+	  <a class="github-button" href="https://github.com/EnderSquidJS/endersquid/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork EnderSquidJS/endersquid on GitHub">Fork endersquid</a>
+	</div>
+	<div class="container">
+		<a name="installation"></a>
+		<h1>Installation</h1>
+		<hr class="style1">
+		<p>Option 1) Install the library via npm</p>
+		<center><code>npm install endersquid</code></center>
+		<p>Option 2) Install the library via github</p>
+		<center><code>git clone https://github.com/EnderSquidJS/endersquid.git</code></center>
+		<a name="usage"></a>
+		<h1>Usage</h1>
+		<hr class="style1">
+		There are several functions that can be used with endersquid.
+		<br><br>
+		<table class="table table-bordered">
+		  <thead>
+		    <tr>
+		      <th scope="col">Functions</th>
+		      <th scope="col">Description</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+					<td><code>onlinePlayers(serverIP)</code></td>
+					<td>Returns an array with all the UUIDS of the Online Players.</td>
+		    </tr>
+		    <tr>
+		      <td><code>onlinePlayersNo(serverIP)</code></td>
+		      <td>Returns the number of the Online Players.</td>
+		    </tr>
+		    <tr>
+					<td><code>serverFavicon(serverIP)</code></td>
+		      <td>Returns the Davicon of the server.</td>
+		    </tr>
+				<tr>
+					<td><code>serverMotd(serverIP)</code></td>
+					<td>Returns the Motd of the server.</td>
+				</tr>
+				<tr>
+					<td><code>serverVersion(serverIP)</code></td>
+					<td>Returns the Minecraft Version of the server.</td>
+				</tr>
+				<tr>
+					<td><code>slotPlayer(serverIP)</code></td>
+					<td>Returns the Maximum Number of Player that can be Online.</td>
+				</tr>
+		  </tbody>
+		</table>
+		<br><br>
+		<p>endersquid needs to be run on a node server, so when you create your script you need to launch the command: <code>node script.js</code></p>
+		<p>If you want to clarify the usage of endersquid, you can check the <a href="https://github.com/EnderSquidJS/endersquid/examples" target="_blank">example folder</a> on our <a href="https://github.com/EnderSquidJS/endersquid" target="_blank">repository</a>.</p>
+		<br>
+		<a name="api"></a>
+		<h1>Public API</h1>
+		<hr class="style1">
+		<p>We are working on a public API which can be callable from everyone.</p>
+
+		<footer>
+			&copy; 2020 <a href="#">EnderSquidJS</a>
+		</footer>
+	</div>
+
+	<!-- GitHub Buttons -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
