@@ -45,29 +45,29 @@
 		  </thead>
 		  <tbody>
 		    <tr>
-					<td><code>onlinePlayers(serverIP)</code></td>
-					<td>Returns an array with all the UUIDS of the Online Players.</td>
+				<td><code>onlinePlayers(serverIP)</code></td>
+				<td>Returns an array with all the UUIDS of the Online Players.</td>
 		    </tr>
 		    <tr>
-		      <td><code>onlinePlayersNo(serverIP)</code></td>
-		      <td>Returns the number of the Online Players.</td>
+				<td><code>onlinePlayersNo(serverIP)</code></td>
+				<td>Returns the number of the Online Players.</td>
 		    </tr>
 		    <tr>
-					<td><code>serverFavicon(serverIP)</code></td>
-		      <td>Returns the Davicon of the server.</td>
+				<td><code>serverFavicon(serverIP)</code></td>
+				<td>Returns the Davicon of the server.</td>
 		    </tr>
-				<tr>
-					<td><code>serverMotd(serverIP)</code></td>
-					<td>Returns the Motd of the server.</td>
-				</tr>
-				<tr>
-					<td><code>serverVersion(serverIP)</code></td>
-					<td>Returns the Minecraft Version of the server.</td>
-				</tr>
-				<tr>
-					<td><code>slotPlayer(serverIP)</code></td>
-					<td>Returns the Maximum Number of Player that can be Online.</td>
-				</tr>
+			<tr>
+				<td><code>serverMotd(serverIP)</code></td>
+				<td>Returns the Motd of the server.</td>
+			</tr>
+			<tr>
+				<td><code>serverVersion(serverIP)</code></td>
+				<td>Returns the Minecraft Version of the server.</td>
+			</tr>
+			<tr>
+				<td><code>slotPlayers(serverIP)</code></td>
+				<td>Returns the Maximum Number of Player that can be Online.</td>
+			</tr>
 		  </tbody>
 		</table>
 		<br><br>
@@ -80,8 +80,19 @@
 		<p>Try our free-to-use API. The endpoint is: <code>http://endersquid.glitch.me/?server=_SERVERIP_</code></p>
 		<p>You need to substitue _SERVERIP_ with the actual Minecraft Server IP that you want to query.<p>
 		<p>The output of our API is a JSON file.</p>
-		<p>In this example endersquid is querying <code>mc.hypixel.net</code>.</p>
-			<iframe src="http://endersquid.glitch.me/?server=172.65.216.245" width="1100" height="500" frameborder="0"></iframe>
+		
+		<form class="form-row align-items-center" method="POST" action="https://giuliodematteis.altervista.org/endersquid/api.php">
+			<div class="input-group mb-2">
+				<div class="input-group-prepend">
+				  <div class="input-group-text">http://endersquid.glitch.me/?server=</div>
+				</div>
+				<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="172.65.216.245" name="ip">	
+				<div class="col-auto">
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+			
+		</form>
 
 		<footer>
 			&copy; 2020 <a href="#">EnderSquidJS</a>
