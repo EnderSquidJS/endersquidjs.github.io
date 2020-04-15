@@ -1,1 +1,1 @@
-# endersquidjs.github.io
+# endersquid.js.org

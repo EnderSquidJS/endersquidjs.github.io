@@ -44,6 +44,14 @@
 		    </tr>
 		  </thead>
 		  <tbody>
+		  	<tr>
+				<td><code>monitorStart(serverIP, fileName)</code></td>
+				<td>Starts monitoring the number of the Online Players on the server every hour and store it into a csv file.</td>
+		    </tr>
+			<tr>
+				<td><code>monitorExport()</code></td>
+				<td>Stops monitoring the server.</td>
+		    </tr>
 		    <tr>
 				<td><code>onlinePlayers(serverIP)</code></td>
 				<td>Returns an array with all the UUIDS of the Online Players.</td>
@@ -78,7 +86,7 @@
 		<h1>Public API</h1>
 		<hr class="style1">
 		<p>Try our free-to-use API. The endpoint is: <code>http://endersquid.glitch.me/?server=_SERVERIP_</code></p>
-		<p>You need to substitue _SERVERIP_ with the actual Minecraft Server IP that you want to query.<p>
+		<p>You need to substitute _SERVERIP_ with the actual Minecraft Server IP that you want to query.<p>
 		<p>The output of our API is a JSON file.</p>
 		
 		<form class="form-row align-items-center" method="POST" action="https://giuliodematteis.altervista.org/endersquid/api.php">
